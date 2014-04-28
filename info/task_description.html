@@ -1,17 +1,17 @@
 <p>
-    SEND + MORE = MONEY
+    Find the largest area
 </p>
 
 <p>
-    Given a string, for example, "SEND MORE MONEY". Every words are numbers where charactors are distinct numbers, belong to {0, ... 9} . You have to check if "SENFD + MORE = MONEY" has solution or not.
+    Playing Go game, we have to know how to count an area on a chess board.
 </p>
 
 <p>
-    <strong>Input: </strong>An string with three words.
+    <strong>Input: </strong>A 2-dim list be a state on 9x9 chess board.
 </p>
 
 <p>
-    <strong>Output: </strong>If there is solution or not.
+    <strong>Output: </strong>A sorted list that every area size.
 </p>
 
 <div class="for_info_only">
@@ -19,7 +19,14 @@
         <strong>Example:</strong>
     </p>
     <pre class="brush: python">
-checkio("SEND MORE MONEY") # True
-checkio("GET LESS JOBS") # True
+checkio([[0,0,0,0,1,0,1,0,0],
+         [0,0,0,1,1,0,1,0,0],
+         [0,0,0,1,0,0,1,0,0],
+         [0,0,1,1,1,1,1,1,1],
+         [1,1,1,0,1,1,0,1,0],
+         [0,0,1,0,1,1,0,1,0],
+         [0,0,1,0,0,0,0,1,0],
+         [0,0,1,1,1,1,1,1,0],
+         [0,0,0,0,0,0,0,1,0]]) # [4,5,6,8,12,13]
     </pre>
 </div>

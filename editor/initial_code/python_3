@@ -1,7 +1,14 @@
-def checkio(string):
+def checkio(state):
     return None
 
 if __name__ == '__main__':
-    assert checkio("SEND MORE MONEY")==True
-    assert checkio("GET LESS JOBS")==True
+    assert checkio([[0,0,0,0,1,0,1,0,0],
+                    [0,0,0,1,1,0,1,0,0],
+                    [0,0,0,1,0,0,1,0,0],
+                    [0,0,1,1,1,1,1,1,1],
+                    [1,1,1,0,1,1,0,1,0],
+                    [0,0,1,0,1,1,0,1,0],
+                    [0,0,1,0,0,0,0,1,0],
+                    [0,0,1,1,1,1,1,1,0],
+                    [0,0,0,0,0,0,0,1,0]]) == [4,5,6,8,12,13]
     print('Done')
