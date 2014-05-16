@@ -3,9 +3,8 @@
 </p>
 
 <p>
-    Playing Go game, we want to know the size of the area we've get.
-    Now we place some black stones on a 9x9 board, and we want to figure out how many area we get
-    and the size of them.
+    Similar to a Go game, we want to know the size of the area we have.
+    Now we place some black stones on a 9x9 board, and we want to figure out how many area we have and the size of them.
 </p>
 
 <p>
@@ -18,19 +17,49 @@
     <strong>Output: </strong>A sorted list of every area size.
 </p>
 
+
+<style type="text/css">
+    .g1 {
+        font-weight: bold;
+        color: red;
+    }
+    .g2 {
+        font-weight: bold;
+        color: blue;
+    }
+    .g3 {
+        font-weight: bold;
+        color: orange;
+    }
+    .g4 {
+        font-weight: bold;
+        color: green;
+    }
+    .g5 {
+        font-weight: bold;
+        color: purple;
+    }
+    .g6 {
+        font-weight: bold;
+        color: lime;
+    }
+</style>
 <div class="for_info_only">
     <p>
         <strong>Example:</strong>
     </p>
     <pre class="brush: python">
-checkio([[0,0,0,0,1,0,1,0,0],
-         [0,0,0,1,1,0,1,0,0],
-         [0,0,0,1,0,0,1,0,0],
-         [0,0,1,1,1,1,1,1,1],
-         [1,1,1,0,1,1,0,1,0],
-         [0,0,1,0,1,1,0,1,0],
-         [0,0,1,0,0,0,0,1,0],
-         [0,0,1,1,1,1,1,1,0],
-         [0,0,0,0,0,0,0,1,0]]) # [4,5,6,8,12,13]
+    assert checkio([
+        [<span class="g1">0</span>,<span class="g1">0</span>,<span class="g1">0</span>,<span class="g1">0</span>,1,<span class="g2">0</span>,1,<span class="g3">0</span>,<span class="g3">0</span>],
+        [<span class="g1">0</span>,<span class="g1">0</span>,<span class="g1">0</span>,1,1,<span class="g2">0</span>,1,<span class="g3">0</span>,<span class="g3">0</span>],
+        [<span class="g1">0</span>,<span class="g1">0</span>,<span class="g1">0</span>,1,<span class="g2">0</span>,<span class="g2">0</span>,1,<span class="g3">0</span>,<span class="g3">0</span>],
+        [<span class="g1">0</span>,<span class="g1">0</span>,1,1,1,1,1,1,1],
+        [1,1,1,<span class="g5">0</span>,1,1,<span class="g5">0</span>,1,<span class="g4">0</span>],
+        [<span class="g6">0</span>,<span class="g6">0</span>,1,<span class="g5">0</span>,1,1,<span class="g5">0</span>,1,<span class="g4">0</span>],
+        [<span class="g6">0</span>,<span class="g6">0</span>,1,<span class="g5">0</span class="g5">,<span class="g5">0</span>,<span class="g5">0</span>,<span class="g5">0</span>,1,<span class="g4">0</span>],
+        [<span class="g6">0</span>,<span class="g6">0</span>,1,1,1,1,1,1,<span class="g4">0</span>],
+        [<span class="g6">0</span>,<span class="g6">0</span>,<span class="g6">0</span>,<span class="g6">0</span>,<span class="g6">0</span>,<span class="g6">0</span>,<span class="g6">0</span>,1,<span class="g4">0</span>]
+
+    ]) == [<span class="g2">4</span>,<span class="g4">5</span>,<span class="g3">6</span>,<span class="g5">8</span>,<span class="g1">12</span>,<span class="g6">13</span>]
     </pre>
 </div>
